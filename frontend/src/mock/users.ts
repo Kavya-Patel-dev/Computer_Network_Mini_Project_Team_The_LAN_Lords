@@ -1,0 +1,48 @@
+import { UserProfile } from '../types/user';
+
+export const MOCK_USERS: UserProfile[] = [
+  {
+    id: 'usr-kavya',
+    name: 'Kavya Patel',
+    email: 'kavya.patel@netroute.ai',
+    role: 'user',
+    status: 'active',
+    plansCount: 5,
+    lastActive: '2026-10-20 12:45 PM',
+    createdAt: '2026-09-15',
+    sessionsCount: 2,
+  },
+  {
+    id: 'adm-riya',
+    name: 'Riya Shah',
+    email: 'riya.shah@netroute.ai',
+    role: 'admin',
+    status: 'active',
+    plansCount: 2,
+    lastActive: '2026-10-20 01:10 PM',
+    createdAt: '2026-08-01',
+    sessionsCount: 3,
+  },
+  {
+    id: 'adm-arjun',
+    name: 'Arjun Mehta',
+    email: 'arjun.mehta@netroute.ai',
+    role: 'admin',
+    status: 'active',
+    plansCount: 1,
+    lastActive: '2026-10-20 11:20 AM',
+    createdAt: '2026-08-10',
+    sessionsCount: 1,
+  },
+  {
+    id: 'usr-dev',
+    name: 'Devansh Joshi',
+    email: 'devansh.j@netroute.ai',
+    role: 'user',
+    status: 'deactivated',
+    plansCount: 1,
+    lastActive: '2026-10-02 09:14 AM',
+    createdAt: '2026-09-20',
+    sessionsCount: 0,
+  },
+];

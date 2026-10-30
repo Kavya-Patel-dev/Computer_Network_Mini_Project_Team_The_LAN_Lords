@@ -1,0 +1,7 @@
+# Inference runtime versions match the existing AI/requirements.lock.txt.
+torch==2.14.1
+torch-geometric==2.8.0.post1
+gymnasium==1.4.0
+numpy==2.5.3
+scipy==1.18.1
+networkx==3.7

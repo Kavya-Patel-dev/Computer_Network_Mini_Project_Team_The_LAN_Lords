@@ -1,0 +1,49 @@
+{
+  "dijkstra_load_aware_alpha": 4.0,
+  "alpha_candidates": [
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "selection_split": "val",
+  "selection_metric": "mean packet loss; ties choose smaller alpha",
+  "validation_mean_packet_loss": {
+    "0.5": 0.00630609436065269,
+    "1.0": 0.0057046062186159145,
+    "2.0": 0.00519523305981942,
+    "4.0": 0.00506062000129334
+  },
+  "validation_graphs": [
+    "Arpanet19728",
+    "EliBackbone",
+    "nobel-us",
+    "Compuserve",
+    "Eunetworks"
+  ],
+  "validation_seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009
+  ],
+  "evaluation_seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009
+  ],
+  "evaluation_seed_split_guard": "asserted before tuning; test graphs are never loaded"
+}

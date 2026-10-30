@@ -1,0 +1,27 @@
+{
+  "name": "api-example",
+  "nodes": [
+    {"id": "R0", "type": "router"},
+    {"id": "R1", "type": "router"},
+    {"id": "R2", "type": "router"},
+    {"id": "R3", "type": "router"},
+    {"id": "R4", "type": "router"},
+    {"id": "H0", "type": "host"},
+    {"id": "H1", "type": "host"},
+    {"id": "H2", "type": "host"},
+    {"id": "H3", "type": "host"}
+  ],
+  "links": [
+    {"src": "R0", "dst": "R1", "bandwidth": 1000, "latency": 2.0, "loss_percent": 0.0},
+    {"src": "R1", "dst": "R3", "bandwidth": 1000, "latency": 2.0, "loss_percent": 0.0},
+    {"src": "R0", "dst": "R2", "bandwidth": 1000, "latency": 2.5, "loss_percent": 0.0},
+    {"src": "R2", "dst": "R3", "bandwidth": 1000, "latency": 2.5, "loss_percent": 0.0},
+    {"src": "R1", "dst": "R2", "bandwidth": 1000, "latency": 1.0, "loss_percent": 0.0},
+    {"src": "R3", "dst": "R4", "bandwidth": 1000, "latency": 3.0, "loss_percent": 0.0},
+    {"src": "R4", "dst": "R0", "bandwidth": 1000, "latency": 3.0, "loss_percent": 0.0},
+    {"src": "H0", "dst": "R0", "bandwidth": 1000, "latency": 0.5, "loss_percent": 0.0},
+    {"src": "H1", "dst": "R1", "bandwidth": 1000, "latency": 0.5, "loss_percent": 0.0},
+    {"src": "H2", "dst": "R3", "bandwidth": 1000, "latency": 0.5, "loss_percent": 0.0},
+    {"src": "H3", "dst": "R4", "bandwidth": 1000, "latency": 0.5, "loss_percent": 0.0}
+  ]
+}

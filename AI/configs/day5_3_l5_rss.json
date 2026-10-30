@@ -1,0 +1,29 @@
+{
+  "jobs": [
+    {
+      "name": "L5_gru_aux",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20535,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": true,
+          "noisy_net": true,
+          "gru_history": true,
+          "mlp_encoder": false,
+          "auxiliary_utilization": true,
+          "noisy_sigma0": 0.1,
+          "compact_history": true
+        },
+        "n_step": 3,
+        "prioritized_replay": true,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    }
+  ]
+}

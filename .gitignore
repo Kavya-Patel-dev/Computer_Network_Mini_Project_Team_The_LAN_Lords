@@ -1,0 +1,56 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!**/.env.example
+!**/.env.*.example
+backend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# Python environments, caches, and test artifacts
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.pytest-tmp/
+**/.mypy_cache/
+**/.ruff_cache/
+*.py[cod]
+.coverage
+htmlcov/
+
+# Frontend dependencies and build output
+**/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Local databases, logs, temporary files, and OS metadata
+outputs/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Generated experiments and reports; the frozen inference checkpoint is kept.
+AI/outputs/
+AI/runs/*
+!AI/runs/day5/
+AI/runs/day5/*
+!AI/runs/day5/final_routing_model.pt
+
+# Presentation/report files are not part of the source-code repository.
+/*.ppt
+/*.pptx
+/*.doc
+/*.docx
+/*.pdf
+
+# Preserve the previous standalone AI repository metadata locally, not in GitHub.
+.ai-history-backup/
+.git

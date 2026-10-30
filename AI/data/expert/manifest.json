@@ -1,0 +1,2519 @@
+{
+  "format": "npz shards; one complete Day 2 observation per expert decision",
+  "split_guard": "train only",
+  "total_steps_target": 200000,
+  "total_steps_written": 200000,
+  "intensity_distribution": {
+    "kind": "log_uniform",
+    "minimum": 0.03,
+    "maximum": 0.3
+  },
+  "evaluation_seeds_forbidden": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009
+  ],
+  "seed_start": 20000,
+  "alpha": 4.0,
+  "experts": [
+    "dijkstra_load_aware_k",
+    "greedy_min_util"
+  ],
+  "candidate_order": "environment-shuffled candidate order; action indices align with obs_candidate_paths",
+  "observation_keys": [
+    "node_features",
+    "edge_features",
+    "flow_features",
+    "candidate_paths",
+    "action_mask",
+    "edge_index",
+    "history_nodes",
+    "history_edges"
+  ],
+  "shards": [
+    {
+      "path": "shards\\BsonetEurope_0000.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 131004
+    },
+    {
+      "path": "shards\\BsonetEurope_0001.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 123261
+    },
+    {
+      "path": "shards\\BsonetEurope_0002.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 154948
+    },
+    {
+      "path": "shards\\BsonetEurope_0003.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 104350
+    },
+    {
+      "path": "shards\\BsonetEurope_0004.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 168012
+    },
+    {
+      "path": "shards\\BsonetEurope_0005.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 152777
+    },
+    {
+      "path": "shards\\BsonetEurope_0006.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 150892
+    },
+    {
+      "path": "shards\\BsonetEurope_0007.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 151884
+    },
+    {
+      "path": "shards\\BsonetEurope_0008.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 170515
+    },
+    {
+      "path": "shards\\BsonetEurope_0009.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 135723
+    },
+    {
+      "path": "shards\\BsonetEurope_0010.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 157101
+    },
+    {
+      "path": "shards\\BsonetEurope_0011.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 157850
+    },
+    {
+      "path": "shards\\BsonetEurope_0012.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 121410
+    },
+    {
+      "path": "shards\\BsonetEurope_0013.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 159437
+    },
+    {
+      "path": "shards\\BsonetEurope_0014.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 155284
+    },
+    {
+      "path": "shards\\BsonetEurope_0015.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 173138
+    },
+    {
+      "path": "shards\\BsonetEurope_0016.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 112899
+    },
+    {
+      "path": "shards\\BsonetEurope_0017.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 135081
+    },
+    {
+      "path": "shards\\BsonetEurope_0018.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 168399
+    },
+    {
+      "path": "shards\\BsonetEurope_0019.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 132682
+    },
+    {
+      "path": "shards\\BsonetEurope_0020.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 151712
+    },
+    {
+      "path": "shards\\BsonetEurope_0021.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 174260
+    },
+    {
+      "path": "shards\\BsonetEurope_0022.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 148232
+    },
+    {
+      "path": "shards\\BsonetEurope_0023.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 167090
+    },
+    {
+      "path": "shards\\BsonetEurope_0024.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 146689
+    },
+    {
+      "path": "shards\\BsonetEurope_0025.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 157479
+    },
+    {
+      "path": "shards\\BsonetEurope_0026.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 136218
+    },
+    {
+      "path": "shards\\BsonetEurope_0027.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 158845
+    },
+    {
+      "path": "shards\\BsonetEurope_0028.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 152430
+    },
+    {
+      "path": "shards\\BsonetEurope_0029.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 124764
+    },
+    {
+      "path": "shards\\BsonetEurope_0030.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 101415
+    },
+    {
+      "path": "shards\\BsonetEurope_0031.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 155858
+    },
+    {
+      "path": "shards\\BsonetEurope_0032.npz",
+      "graph": "BsonetEurope",
+      "steps": 500,
+      "bytes": 162791
+    },
+    {
+      "path": "shards\\BsonetEurope_0033.npz",
+      "graph": "BsonetEurope",
+      "steps": 167,
+      "bytes": 44599
+    },
+    {
+      "path": "shards\\HiberniaNireland_0000.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 168549
+    },
+    {
+      "path": "shards\\HiberniaNireland_0001.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 155168
+    },
+    {
+      "path": "shards\\HiberniaNireland_0002.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 170553
+    },
+    {
+      "path": "shards\\HiberniaNireland_0003.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 135240
+    },
+    {
+      "path": "shards\\HiberniaNireland_0004.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 187868
+    },
+    {
+      "path": "shards\\HiberniaNireland_0005.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 122383
+    },
+    {
+      "path": "shards\\HiberniaNireland_0006.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 128182
+    },
+    {
+      "path": "shards\\HiberniaNireland_0007.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 124900
+    },
+    {
+      "path": "shards\\HiberniaNireland_0008.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 146903
+    },
+    {
+      "path": "shards\\HiberniaNireland_0009.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 140045
+    },
+    {
+      "path": "shards\\HiberniaNireland_0010.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 153418
+    },
+    {
+      "path": "shards\\HiberniaNireland_0011.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 121924
+    },
+    {
+      "path": "shards\\HiberniaNireland_0012.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 152520
+    },
+    {
+      "path": "shards\\HiberniaNireland_0013.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 196481
+    },
+    {
+      "path": "shards\\HiberniaNireland_0014.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 172594
+    },
+    {
+      "path": "shards\\HiberniaNireland_0015.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 127633
+    },
+    {
+      "path": "shards\\HiberniaNireland_0016.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 124980
+    },
+    {
+      "path": "shards\\HiberniaNireland_0017.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 122816
+    },
+    {
+      "path": "shards\\HiberniaNireland_0018.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 123539
+    },
+    {
+      "path": "shards\\HiberniaNireland_0019.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 122825
+    },
+    {
+      "path": "shards\\HiberniaNireland_0020.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 195444
+    },
+    {
+      "path": "shards\\HiberniaNireland_0021.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 131452
+    },
+    {
+      "path": "shards\\HiberniaNireland_0022.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 163730
+    },
+    {
+      "path": "shards\\HiberniaNireland_0023.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 156174
+    },
+    {
+      "path": "shards\\HiberniaNireland_0024.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 136875
+    },
+    {
+      "path": "shards\\HiberniaNireland_0025.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 149311
+    },
+    {
+      "path": "shards\\HiberniaNireland_0026.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 167950
+    },
+    {
+      "path": "shards\\HiberniaNireland_0027.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 178291
+    },
+    {
+      "path": "shards\\HiberniaNireland_0028.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 176232
+    },
+    {
+      "path": "shards\\HiberniaNireland_0029.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 124342
+    },
+    {
+      "path": "shards\\HiberniaNireland_0030.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 130679
+    },
+    {
+      "path": "shards\\HiberniaNireland_0031.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 142787
+    },
+    {
+      "path": "shards\\HiberniaNireland_0032.npz",
+      "graph": "HiberniaNireland",
+      "steps": 500,
+      "bytes": 125517
+    },
+    {
+      "path": "shards\\HiberniaNireland_0033.npz",
+      "graph": "HiberniaNireland",
+      "steps": 167,
+      "bytes": 45482
+    },
+    {
+      "path": "shards\\Nsfnet_0000.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 130285
+    },
+    {
+      "path": "shards\\Nsfnet_0001.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 121187
+    },
+    {
+      "path": "shards\\Nsfnet_0002.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 127992
+    },
+    {
+      "path": "shards\\Nsfnet_0003.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 139485
+    },
+    {
+      "path": "shards\\Nsfnet_0004.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 142255
+    },
+    {
+      "path": "shards\\Nsfnet_0005.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 111080
+    },
+    {
+      "path": "shards\\Nsfnet_0006.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 126965
+    },
+    {
+      "path": "shards\\Nsfnet_0007.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 134343
+    },
+    {
+      "path": "shards\\Nsfnet_0008.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 106090
+    },
+    {
+      "path": "shards\\Nsfnet_0009.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 99906
+    },
+    {
+      "path": "shards\\Nsfnet_0010.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 138659
+    },
+    {
+      "path": "shards\\Nsfnet_0011.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 121942
+    },
+    {
+      "path": "shards\\Nsfnet_0012.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 94092
+    },
+    {
+      "path": "shards\\Nsfnet_0013.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 145528
+    },
+    {
+      "path": "shards\\Nsfnet_0014.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 92798
+    },
+    {
+      "path": "shards\\Nsfnet_0015.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 147405
+    },
+    {
+      "path": "shards\\Nsfnet_0016.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 100077
+    },
+    {
+      "path": "shards\\Nsfnet_0017.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 98524
+    },
+    {
+      "path": "shards\\Nsfnet_0018.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 148093
+    },
+    {
+      "path": "shards\\Nsfnet_0019.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 131942
+    },
+    {
+      "path": "shards\\Nsfnet_0020.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 101615
+    },
+    {
+      "path": "shards\\Nsfnet_0021.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 103121
+    },
+    {
+      "path": "shards\\Nsfnet_0022.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 88920
+    },
+    {
+      "path": "shards\\Nsfnet_0023.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 119480
+    },
+    {
+      "path": "shards\\Nsfnet_0024.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 93920
+    },
+    {
+      "path": "shards\\Nsfnet_0025.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 116896
+    },
+    {
+      "path": "shards\\Nsfnet_0026.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 126626
+    },
+    {
+      "path": "shards\\Nsfnet_0027.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 119543
+    },
+    {
+      "path": "shards\\Nsfnet_0028.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 113745
+    },
+    {
+      "path": "shards\\Nsfnet_0029.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 118183
+    },
+    {
+      "path": "shards\\Nsfnet_0030.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 135870
+    },
+    {
+      "path": "shards\\Nsfnet_0031.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 119662
+    },
+    {
+      "path": "shards\\Nsfnet_0032.npz",
+      "graph": "Nsfnet",
+      "steps": 500,
+      "bytes": 101349
+    },
+    {
+      "path": "shards\\Nsfnet_0033.npz",
+      "graph": "Nsfnet",
+      "steps": 167,
+      "bytes": 46575
+    },
+    {
+      "path": "shards\\Peer1_0000.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 108062
+    },
+    {
+      "path": "shards\\Peer1_0001.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 104026
+    },
+    {
+      "path": "shards\\Peer1_0002.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 154354
+    },
+    {
+      "path": "shards\\Peer1_0003.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 128420
+    },
+    {
+      "path": "shards\\Peer1_0004.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 97965
+    },
+    {
+      "path": "shards\\Peer1_0005.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 155551
+    },
+    {
+      "path": "shards\\Peer1_0006.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 161183
+    },
+    {
+      "path": "shards\\Peer1_0007.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 96207
+    },
+    {
+      "path": "shards\\Peer1_0008.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 98876
+    },
+    {
+      "path": "shards\\Peer1_0009.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 129084
+    },
+    {
+      "path": "shards\\Peer1_0010.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 137492
+    },
+    {
+      "path": "shards\\Peer1_0011.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 144164
+    },
+    {
+      "path": "shards\\Peer1_0012.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 137551
+    },
+    {
+      "path": "shards\\Peer1_0013.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 145162
+    },
+    {
+      "path": "shards\\Peer1_0014.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 159544
+    },
+    {
+      "path": "shards\\Peer1_0015.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 130144
+    },
+    {
+      "path": "shards\\Peer1_0016.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 102640
+    },
+    {
+      "path": "shards\\Peer1_0017.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 147832
+    },
+    {
+      "path": "shards\\Peer1_0018.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 123111
+    },
+    {
+      "path": "shards\\Peer1_0019.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 92929
+    },
+    {
+      "path": "shards\\Peer1_0020.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 147721
+    },
+    {
+      "path": "shards\\Peer1_0021.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 121208
+    },
+    {
+      "path": "shards\\Peer1_0022.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 132837
+    },
+    {
+      "path": "shards\\Peer1_0023.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 125860
+    },
+    {
+      "path": "shards\\Peer1_0024.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 150296
+    },
+    {
+      "path": "shards\\Peer1_0025.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 160965
+    },
+    {
+      "path": "shards\\Peer1_0026.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 118505
+    },
+    {
+      "path": "shards\\Peer1_0027.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 156837
+    },
+    {
+      "path": "shards\\Peer1_0028.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 146487
+    },
+    {
+      "path": "shards\\Peer1_0029.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 108121
+    },
+    {
+      "path": "shards\\Peer1_0030.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 104728
+    },
+    {
+      "path": "shards\\Peer1_0031.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 102459
+    },
+    {
+      "path": "shards\\Peer1_0032.npz",
+      "graph": "Peer1",
+      "steps": 500,
+      "bytes": 107552
+    },
+    {
+      "path": "shards\\Peer1_0033.npz",
+      "graph": "Peer1",
+      "steps": 167,
+      "bytes": 40910
+    },
+    {
+      "path": "shards\\abilene_0000.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 131344
+    },
+    {
+      "path": "shards\\abilene_0001.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 120797
+    },
+    {
+      "path": "shards\\abilene_0002.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 95968
+    },
+    {
+      "path": "shards\\abilene_0003.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 97627
+    },
+    {
+      "path": "shards\\abilene_0004.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 129820
+    },
+    {
+      "path": "shards\\abilene_0005.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 80862
+    },
+    {
+      "path": "shards\\abilene_0006.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 85290
+    },
+    {
+      "path": "shards\\abilene_0007.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 88847
+    },
+    {
+      "path": "shards\\abilene_0008.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 106521
+    },
+    {
+      "path": "shards\\abilene_0009.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 110261
+    },
+    {
+      "path": "shards\\abilene_0010.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 98237
+    },
+    {
+      "path": "shards\\abilene_0011.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 95508
+    },
+    {
+      "path": "shards\\abilene_0012.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 134750
+    },
+    {
+      "path": "shards\\abilene_0013.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 117486
+    },
+    {
+      "path": "shards\\abilene_0014.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 109189
+    },
+    {
+      "path": "shards\\abilene_0015.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 83030
+    },
+    {
+      "path": "shards\\abilene_0016.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 118714
+    },
+    {
+      "path": "shards\\abilene_0017.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 127547
+    },
+    {
+      "path": "shards\\abilene_0018.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 95188
+    },
+    {
+      "path": "shards\\abilene_0019.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 134819
+    },
+    {
+      "path": "shards\\abilene_0020.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 94373
+    },
+    {
+      "path": "shards\\abilene_0021.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 106929
+    },
+    {
+      "path": "shards\\abilene_0022.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 92597
+    },
+    {
+      "path": "shards\\abilene_0023.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 112432
+    },
+    {
+      "path": "shards\\abilene_0024.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 116086
+    },
+    {
+      "path": "shards\\abilene_0025.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 123583
+    },
+    {
+      "path": "shards\\abilene_0026.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 112810
+    },
+    {
+      "path": "shards\\abilene_0027.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 91373
+    },
+    {
+      "path": "shards\\abilene_0028.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 96773
+    },
+    {
+      "path": "shards\\abilene_0029.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 94003
+    },
+    {
+      "path": "shards\\abilene_0030.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 84382
+    },
+    {
+      "path": "shards\\abilene_0031.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 92326
+    },
+    {
+      "path": "shards\\abilene_0032.npz",
+      "graph": "abilene",
+      "steps": 500,
+      "bytes": 93416
+    },
+    {
+      "path": "shards\\abilene_0033.npz",
+      "graph": "abilene",
+      "steps": 167,
+      "bytes": 28736
+    },
+    {
+      "path": "shards\\atlanta_0000.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 125612
+    },
+    {
+      "path": "shards\\atlanta_0001.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 127851
+    },
+    {
+      "path": "shards\\atlanta_0002.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 123372
+    },
+    {
+      "path": "shards\\atlanta_0003.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 112593
+    },
+    {
+      "path": "shards\\atlanta_0004.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 97730
+    },
+    {
+      "path": "shards\\atlanta_0005.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 102691
+    },
+    {
+      "path": "shards\\atlanta_0006.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 125675
+    },
+    {
+      "path": "shards\\atlanta_0007.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 137821
+    },
+    {
+      "path": "shards\\atlanta_0008.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 152419
+    },
+    {
+      "path": "shards\\atlanta_0009.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 122553
+    },
+    {
+      "path": "shards\\atlanta_0010.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 120509
+    },
+    {
+      "path": "shards\\atlanta_0011.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 99441
+    },
+    {
+      "path": "shards\\atlanta_0012.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 158288
+    },
+    {
+      "path": "shards\\atlanta_0013.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 128538
+    },
+    {
+      "path": "shards\\atlanta_0014.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 125955
+    },
+    {
+      "path": "shards\\atlanta_0015.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 89582
+    },
+    {
+      "path": "shards\\atlanta_0016.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 150595
+    },
+    {
+      "path": "shards\\atlanta_0017.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 127113
+    },
+    {
+      "path": "shards\\atlanta_0018.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 91729
+    },
+    {
+      "path": "shards\\atlanta_0019.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 101368
+    },
+    {
+      "path": "shards\\atlanta_0020.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 94523
+    },
+    {
+      "path": "shards\\atlanta_0021.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 121834
+    },
+    {
+      "path": "shards\\atlanta_0022.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 113596
+    },
+    {
+      "path": "shards\\atlanta_0023.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 113934
+    },
+    {
+      "path": "shards\\atlanta_0024.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 107278
+    },
+    {
+      "path": "shards\\atlanta_0025.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 159478
+    },
+    {
+      "path": "shards\\atlanta_0026.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 108251
+    },
+    {
+      "path": "shards\\atlanta_0027.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 114696
+    },
+    {
+      "path": "shards\\atlanta_0028.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 116833
+    },
+    {
+      "path": "shards\\atlanta_0029.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 92289
+    },
+    {
+      "path": "shards\\atlanta_0030.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 155341
+    },
+    {
+      "path": "shards\\atlanta_0031.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 113332
+    },
+    {
+      "path": "shards\\atlanta_0032.npz",
+      "graph": "atlanta",
+      "steps": 500,
+      "bytes": 111653
+    },
+    {
+      "path": "shards\\atlanta_0033.npz",
+      "graph": "atlanta",
+      "steps": 167,
+      "bytes": 44739
+    },
+    {
+      "path": "shards\\geant_0000.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 171833
+    },
+    {
+      "path": "shards\\geant_0001.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 182151
+    },
+    {
+      "path": "shards\\geant_0002.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 182959
+    },
+    {
+      "path": "shards\\geant_0003.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 178301
+    },
+    {
+      "path": "shards\\geant_0004.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 179371
+    },
+    {
+      "path": "shards\\geant_0005.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 176673
+    },
+    {
+      "path": "shards\\geant_0006.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 121258
+    },
+    {
+      "path": "shards\\geant_0007.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 167953
+    },
+    {
+      "path": "shards\\geant_0008.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 197486
+    },
+    {
+      "path": "shards\\geant_0009.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 176809
+    },
+    {
+      "path": "shards\\geant_0010.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 173748
+    },
+    {
+      "path": "shards\\geant_0011.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 152166
+    },
+    {
+      "path": "shards\\geant_0012.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 163064
+    },
+    {
+      "path": "shards\\geant_0013.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 179387
+    },
+    {
+      "path": "shards\\geant_0014.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 199559
+    },
+    {
+      "path": "shards\\geant_0015.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 191647
+    },
+    {
+      "path": "shards\\geant_0016.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 137944
+    },
+    {
+      "path": "shards\\geant_0017.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 160881
+    },
+    {
+      "path": "shards\\geant_0018.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 163605
+    },
+    {
+      "path": "shards\\geant_0019.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 168217
+    },
+    {
+      "path": "shards\\geant_0020.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 135324
+    },
+    {
+      "path": "shards\\geant_0021.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 119685
+    },
+    {
+      "path": "shards\\geant_0022.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 163604
+    },
+    {
+      "path": "shards\\geant_0023.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 166998
+    },
+    {
+      "path": "shards\\geant_0024.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 187458
+    },
+    {
+      "path": "shards\\geant_0025.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 143908
+    },
+    {
+      "path": "shards\\geant_0026.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 138736
+    },
+    {
+      "path": "shards\\geant_0027.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 148937
+    },
+    {
+      "path": "shards\\geant_0028.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 115538
+    },
+    {
+      "path": "shards\\geant_0029.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 142430
+    },
+    {
+      "path": "shards\\geant_0030.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 171358
+    },
+    {
+      "path": "shards\\geant_0031.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 168811
+    },
+    {
+      "path": "shards\\geant_0032.npz",
+      "graph": "geant",
+      "steps": 500,
+      "bytes": 160701
+    },
+    {
+      "path": "shards\\geant_0033.npz",
+      "graph": "geant",
+      "steps": 167,
+      "bytes": 57102
+    },
+    {
+      "path": "shards\\newyork_0000.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 170553
+    },
+    {
+      "path": "shards\\newyork_0001.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 174476
+    },
+    {
+      "path": "shards\\newyork_0002.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 144338
+    },
+    {
+      "path": "shards\\newyork_0003.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 113052
+    },
+    {
+      "path": "shards\\newyork_0004.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 164052
+    },
+    {
+      "path": "shards\\newyork_0005.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 154432
+    },
+    {
+      "path": "shards\\newyork_0006.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 176455
+    },
+    {
+      "path": "shards\\newyork_0007.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 122146
+    },
+    {
+      "path": "shards\\newyork_0008.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 116557
+    },
+    {
+      "path": "shards\\newyork_0009.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 136430
+    },
+    {
+      "path": "shards\\newyork_0010.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 164768
+    },
+    {
+      "path": "shards\\newyork_0011.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 156547
+    },
+    {
+      "path": "shards\\newyork_0012.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 167491
+    },
+    {
+      "path": "shards\\newyork_0013.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 109191
+    },
+    {
+      "path": "shards\\newyork_0014.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 106005
+    },
+    {
+      "path": "shards\\newyork_0015.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 119470
+    },
+    {
+      "path": "shards\\newyork_0016.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 145955
+    },
+    {
+      "path": "shards\\newyork_0017.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 124649
+    },
+    {
+      "path": "shards\\newyork_0018.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 123597
+    },
+    {
+      "path": "shards\\newyork_0019.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 149620
+    },
+    {
+      "path": "shards\\newyork_0020.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 170702
+    },
+    {
+      "path": "shards\\newyork_0021.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 162847
+    },
+    {
+      "path": "shards\\newyork_0022.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 131547
+    },
+    {
+      "path": "shards\\newyork_0023.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 108890
+    },
+    {
+      "path": "shards\\newyork_0024.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 124644
+    },
+    {
+      "path": "shards\\newyork_0025.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 124392
+    },
+    {
+      "path": "shards\\newyork_0026.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 136988
+    },
+    {
+      "path": "shards\\newyork_0027.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 127243
+    },
+    {
+      "path": "shards\\newyork_0028.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 164070
+    },
+    {
+      "path": "shards\\newyork_0029.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 172682
+    },
+    {
+      "path": "shards\\newyork_0030.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 124059
+    },
+    {
+      "path": "shards\\newyork_0031.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 166360
+    },
+    {
+      "path": "shards\\newyork_0032.npz",
+      "graph": "newyork",
+      "steps": 500,
+      "bytes": 122112
+    },
+    {
+      "path": "shards\\newyork_0033.npz",
+      "graph": "newyork",
+      "steps": 167,
+      "bytes": 44697
+    },
+    {
+      "path": "shards\\Internet2_0000.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 165549
+    },
+    {
+      "path": "shards\\Internet2_0001.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 156924
+    },
+    {
+      "path": "shards\\Internet2_0002.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 202200
+    },
+    {
+      "path": "shards\\Internet2_0003.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 153929
+    },
+    {
+      "path": "shards\\Internet2_0004.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 147241
+    },
+    {
+      "path": "shards\\Internet2_0005.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 170918
+    },
+    {
+      "path": "shards\\Internet2_0006.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 199790
+    },
+    {
+      "path": "shards\\Internet2_0007.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 144502
+    },
+    {
+      "path": "shards\\Internet2_0008.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 118672
+    },
+    {
+      "path": "shards\\Internet2_0009.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 128155
+    },
+    {
+      "path": "shards\\Internet2_0010.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 140060
+    },
+    {
+      "path": "shards\\Internet2_0011.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 189206
+    },
+    {
+      "path": "shards\\Internet2_0012.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 137418
+    },
+    {
+      "path": "shards\\Internet2_0013.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 178372
+    },
+    {
+      "path": "shards\\Internet2_0014.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 208281
+    },
+    {
+      "path": "shards\\Internet2_0015.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 135300
+    },
+    {
+      "path": "shards\\Internet2_0016.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 146555
+    },
+    {
+      "path": "shards\\Internet2_0017.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 206618
+    },
+    {
+      "path": "shards\\Internet2_0018.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 170828
+    },
+    {
+      "path": "shards\\Internet2_0019.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 130739
+    },
+    {
+      "path": "shards\\Internet2_0020.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 160839
+    },
+    {
+      "path": "shards\\Internet2_0021.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 181636
+    },
+    {
+      "path": "shards\\Internet2_0022.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 137886
+    },
+    {
+      "path": "shards\\Internet2_0023.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 168677
+    },
+    {
+      "path": "shards\\Internet2_0024.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 132018
+    },
+    {
+      "path": "shards\\Internet2_0025.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 188899
+    },
+    {
+      "path": "shards\\Internet2_0026.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 134528
+    },
+    {
+      "path": "shards\\Internet2_0027.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 149093
+    },
+    {
+      "path": "shards\\Internet2_0028.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 154328
+    },
+    {
+      "path": "shards\\Internet2_0029.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 133748
+    },
+    {
+      "path": "shards\\Internet2_0030.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 117400
+    },
+    {
+      "path": "shards\\Internet2_0031.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 138248
+    },
+    {
+      "path": "shards\\Internet2_0032.npz",
+      "graph": "Internet2",
+      "steps": 500,
+      "bytes": 118257
+    },
+    {
+      "path": "shards\\Internet2_0033.npz",
+      "graph": "Internet2",
+      "steps": 166,
+      "bytes": 58078
+    },
+    {
+      "path": "shards\\Oxford_0000.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 130083
+    },
+    {
+      "path": "shards\\Oxford_0001.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 138788
+    },
+    {
+      "path": "shards\\Oxford_0002.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 190003
+    },
+    {
+      "path": "shards\\Oxford_0003.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 189214
+    },
+    {
+      "path": "shards\\Oxford_0004.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 187684
+    },
+    {
+      "path": "shards\\Oxford_0005.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 192784
+    },
+    {
+      "path": "shards\\Oxford_0006.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 145211
+    },
+    {
+      "path": "shards\\Oxford_0007.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 167088
+    },
+    {
+      "path": "shards\\Oxford_0008.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 149732
+    },
+    {
+      "path": "shards\\Oxford_0009.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 165614
+    },
+    {
+      "path": "shards\\Oxford_0010.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 145040
+    },
+    {
+      "path": "shards\\Oxford_0011.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 152160
+    },
+    {
+      "path": "shards\\Oxford_0012.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 139380
+    },
+    {
+      "path": "shards\\Oxford_0013.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 148521
+    },
+    {
+      "path": "shards\\Oxford_0014.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 193990
+    },
+    {
+      "path": "shards\\Oxford_0015.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 134424
+    },
+    {
+      "path": "shards\\Oxford_0016.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 155414
+    },
+    {
+      "path": "shards\\Oxford_0017.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 129036
+    },
+    {
+      "path": "shards\\Oxford_0018.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 130021
+    },
+    {
+      "path": "shards\\Oxford_0019.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 166331
+    },
+    {
+      "path": "shards\\Oxford_0020.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 174118
+    },
+    {
+      "path": "shards\\Oxford_0021.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 185687
+    },
+    {
+      "path": "shards\\Oxford_0022.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 151037
+    },
+    {
+      "path": "shards\\Oxford_0023.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 136653
+    },
+    {
+      "path": "shards\\Oxford_0024.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 158680
+    },
+    {
+      "path": "shards\\Oxford_0025.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 137534
+    },
+    {
+      "path": "shards\\Oxford_0026.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 160593
+    },
+    {
+      "path": "shards\\Oxford_0027.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 134208
+    },
+    {
+      "path": "shards\\Oxford_0028.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 195792
+    },
+    {
+      "path": "shards\\Oxford_0029.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 189260
+    },
+    {
+      "path": "shards\\Oxford_0030.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 125915
+    },
+    {
+      "path": "shards\\Oxford_0031.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 184961
+    },
+    {
+      "path": "shards\\Oxford_0032.npz",
+      "graph": "Oxford",
+      "steps": 500,
+      "bytes": 130589
+    },
+    {
+      "path": "shards\\Oxford_0033.npz",
+      "graph": "Oxford",
+      "steps": 166,
+      "bytes": 55454
+    },
+    {
+      "path": "shards\\Renater2004_0000.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 174718
+    },
+    {
+      "path": "shards\\Renater2004_0001.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 161110
+    },
+    {
+      "path": "shards\\Renater2004_0002.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 182667
+    },
+    {
+      "path": "shards\\Renater2004_0003.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 207100
+    },
+    {
+      "path": "shards\\Renater2004_0004.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 175930
+    },
+    {
+      "path": "shards\\Renater2004_0005.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 203978
+    },
+    {
+      "path": "shards\\Renater2004_0006.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 213631
+    },
+    {
+      "path": "shards\\Renater2004_0007.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 205703
+    },
+    {
+      "path": "shards\\Renater2004_0008.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 204652
+    },
+    {
+      "path": "shards\\Renater2004_0009.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 176392
+    },
+    {
+      "path": "shards\\Renater2004_0010.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 198720
+    },
+    {
+      "path": "shards\\Renater2004_0011.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 178551
+    },
+    {
+      "path": "shards\\Renater2004_0012.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 180136
+    },
+    {
+      "path": "shards\\Renater2004_0013.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 178308
+    },
+    {
+      "path": "shards\\Renater2004_0014.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 165034
+    },
+    {
+      "path": "shards\\Renater2004_0015.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 164282
+    },
+    {
+      "path": "shards\\Renater2004_0016.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 171745
+    },
+    {
+      "path": "shards\\Renater2004_0017.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 214470
+    },
+    {
+      "path": "shards\\Renater2004_0018.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 201340
+    },
+    {
+      "path": "shards\\Renater2004_0019.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 177666
+    },
+    {
+      "path": "shards\\Renater2004_0020.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 209120
+    },
+    {
+      "path": "shards\\Renater2004_0021.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 165153
+    },
+    {
+      "path": "shards\\Renater2004_0022.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 196412
+    },
+    {
+      "path": "shards\\Renater2004_0023.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 146763
+    },
+    {
+      "path": "shards\\Renater2004_0024.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 215587
+    },
+    {
+      "path": "shards\\Renater2004_0025.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 219372
+    },
+    {
+      "path": "shards\\Renater2004_0026.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 172501
+    },
+    {
+      "path": "shards\\Renater2004_0027.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 208914
+    },
+    {
+      "path": "shards\\Renater2004_0028.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 175330
+    },
+    {
+      "path": "shards\\Renater2004_0029.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 170698
+    },
+    {
+      "path": "shards\\Renater2004_0030.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 212482
+    },
+    {
+      "path": "shards\\Renater2004_0031.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 216911
+    },
+    {
+      "path": "shards\\Renater2004_0032.npz",
+      "graph": "Renater2004",
+      "steps": 500,
+      "bytes": 225744
+    },
+    {
+      "path": "shards\\Renater2004_0033.npz",
+      "graph": "Renater2004",
+      "steps": 166,
+      "bytes": 53747
+    },
+    {
+      "path": "shards\\Rhnet_0000.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 115806
+    },
+    {
+      "path": "shards\\Rhnet_0001.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 129146
+    },
+    {
+      "path": "shards\\Rhnet_0002.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 118439
+    },
+    {
+      "path": "shards\\Rhnet_0003.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 128294
+    },
+    {
+      "path": "shards\\Rhnet_0004.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 154854
+    },
+    {
+      "path": "shards\\Rhnet_0005.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 169980
+    },
+    {
+      "path": "shards\\Rhnet_0006.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 141423
+    },
+    {
+      "path": "shards\\Rhnet_0007.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 129436
+    },
+    {
+      "path": "shards\\Rhnet_0008.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 135669
+    },
+    {
+      "path": "shards\\Rhnet_0009.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 118936
+    },
+    {
+      "path": "shards\\Rhnet_0010.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 116564
+    },
+    {
+      "path": "shards\\Rhnet_0011.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 141280
+    },
+    {
+      "path": "shards\\Rhnet_0012.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 150776
+    },
+    {
+      "path": "shards\\Rhnet_0013.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 160871
+    },
+    {
+      "path": "shards\\Rhnet_0014.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 163917
+    },
+    {
+      "path": "shards\\Rhnet_0015.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 162360
+    },
+    {
+      "path": "shards\\Rhnet_0016.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 120823
+    },
+    {
+      "path": "shards\\Rhnet_0017.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 121885
+    },
+    {
+      "path": "shards\\Rhnet_0018.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 154005
+    },
+    {
+      "path": "shards\\Rhnet_0019.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 146572
+    },
+    {
+      "path": "shards\\Rhnet_0020.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 152663
+    },
+    {
+      "path": "shards\\Rhnet_0021.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 119251
+    },
+    {
+      "path": "shards\\Rhnet_0022.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 174973
+    },
+    {
+      "path": "shards\\Rhnet_0023.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 165794
+    },
+    {
+      "path": "shards\\Rhnet_0024.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 165976
+    },
+    {
+      "path": "shards\\Rhnet_0025.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 120526
+    },
+    {
+      "path": "shards\\Rhnet_0026.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 156214
+    },
+    {
+      "path": "shards\\Rhnet_0027.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 151928
+    },
+    {
+      "path": "shards\\Rhnet_0028.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 128704
+    },
+    {
+      "path": "shards\\Rhnet_0029.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 118922
+    },
+    {
+      "path": "shards\\Rhnet_0030.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 121688
+    },
+    {
+      "path": "shards\\Rhnet_0031.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 173025
+    },
+    {
+      "path": "shards\\Rhnet_0032.npz",
+      "graph": "Rhnet",
+      "steps": 500,
+      "bytes": 113749
+    },
+    {
+      "path": "shards\\Rhnet_0033.npz",
+      "graph": "Rhnet",
+      "steps": 166,
+      "bytes": 55329
+    }
+  ],
+  "per_graph_steps": {
+    "BsonetEurope": 16667,
+    "HiberniaNireland": 16667,
+    "Nsfnet": 16667,
+    "Peer1": 16667,
+    "abilene": 16667,
+    "atlanta": 16667,
+    "geant": 16667,
+    "newyork": 16667,
+    "Internet2": 16666,
+    "Oxford": 16666,
+    "Renater2004": 16666,
+    "Rhnet": 16666
+  },
+  "action_index_distribution": {
+    "0": 87473,
+    "1": 43201,
+    "2": 37619,
+    "3": 31707
+  },
+  "expert_agreement_rate": 0.58337,
+  "expert_agreement_counts": {
+    "agree": 116674,
+    "compared": 200000
+  },
+  "expert_policy_step_distribution": {
+    "dijkstra_load_aware_k": 100000,
+    "greedy_min_util": 100000
+  }
+}

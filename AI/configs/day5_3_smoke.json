@@ -1,0 +1,347 @@
+{
+  "jobs": [
+    {
+      "name": "L0_base",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20530,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": false,
+          "noisy_net": false,
+          "gru_history": false,
+          "mlp_encoder": false,
+          "auxiliary_utilization": false,
+          "noisy_sigma0": 0.1
+        },
+        "n_step": 1,
+        "prioritized_replay": false,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    },
+    {
+      "name": "L1_dueling",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20531,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": true,
+          "noisy_net": false,
+          "gru_history": false,
+          "mlp_encoder": false,
+          "auxiliary_utilization": false,
+          "noisy_sigma0": 0.1
+        },
+        "n_step": 1,
+        "prioritized_replay": false,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    },
+    {
+      "name": "L2_nstep",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20532,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": true,
+          "noisy_net": false,
+          "gru_history": false,
+          "mlp_encoder": false,
+          "auxiliary_utilization": false,
+          "noisy_sigma0": 0.1
+        },
+        "n_step": 3,
+        "prioritized_replay": false,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    },
+    {
+      "name": "L3_prioritized",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20533,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": true,
+          "noisy_net": false,
+          "gru_history": false,
+          "mlp_encoder": false,
+          "auxiliary_utilization": false,
+          "noisy_sigma0": 0.1
+        },
+        "n_step": 3,
+        "prioritized_replay": true,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    },
+    {
+      "name": "L4_noisy",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20534,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": true,
+          "noisy_net": true,
+          "gru_history": false,
+          "mlp_encoder": false,
+          "auxiliary_utilization": false,
+          "noisy_sigma0": 0.1
+        },
+        "n_step": 3,
+        "prioritized_replay": true,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    },
+    {
+      "name": "L5_gru_aux",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20535,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": true,
+          "noisy_net": true,
+          "gru_history": true,
+          "mlp_encoder": false,
+          "auxiliary_utilization": true,
+          "noisy_sigma0": 0.1,
+          "compact_history": true
+        },
+        "n_step": 3,
+        "prioritized_replay": true,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    },
+    {
+      "name": "MLP_encoder",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20536,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": false,
+          "noisy_net": false,
+          "gru_history": false,
+          "mlp_encoder": true,
+          "auxiliary_utilization": false,
+          "noisy_sigma0": 0.1
+        },
+        "n_step": 1,
+        "prioritized_replay": false,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    },
+    {
+      "name": "ablate_no_dueling",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20537,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": false,
+          "noisy_net": true,
+          "gru_history": true,
+          "mlp_encoder": false,
+          "auxiliary_utilization": true,
+          "noisy_sigma0": 0.1,
+          "compact_history": true
+        },
+        "n_step": 3,
+        "prioritized_replay": true,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    },
+    {
+      "name": "ablate_no_per_nstep",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20538,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": true,
+          "noisy_net": true,
+          "gru_history": true,
+          "mlp_encoder": false,
+          "auxiliary_utilization": true,
+          "noisy_sigma0": 0.1,
+          "compact_history": true
+        },
+        "n_step": 1,
+        "prioritized_replay": false,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    },
+    {
+      "name": "ablate_no_gru",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20539,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": true,
+          "noisy_net": true,
+          "gru_history": false,
+          "mlp_encoder": false,
+          "auxiliary_utilization": true,
+          "noisy_sigma0": 0.1
+        },
+        "n_step": 3,
+        "prioritized_replay": true,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    },
+    {
+      "name": "ablate_no_aux",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20540,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": true,
+          "noisy_net": true,
+          "gru_history": true,
+          "mlp_encoder": false,
+          "auxiliary_utilization": false,
+          "noisy_sigma0": 0.1,
+          "compact_history": true
+        },
+        "n_step": 3,
+        "prioritized_replay": true,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    },
+    {
+      "name": "ablate_no_gat",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20541,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": true,
+          "noisy_net": true,
+          "gru_history": true,
+          "mlp_encoder": true,
+          "auxiliary_utilization": true,
+          "noisy_sigma0": 0.1,
+          "compact_history": true
+        },
+        "n_step": 3,
+        "prioritized_replay": true,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    },
+    {
+      "name": "ablate_no_imitation",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20542,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": true,
+          "noisy_net": true,
+          "gru_history": true,
+          "mlp_encoder": false,
+          "auxiliary_utilization": true,
+          "noisy_sigma0": 0.1,
+          "compact_history": true
+        },
+        "n_step": 3,
+        "prioritized_replay": true,
+        "load_bc": false,
+        "auxiliary_bc_weight": 0.0
+      }
+    },
+    {
+      "name": "ablate_no_noisy",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20543,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": true,
+          "noisy_net": false,
+          "gru_history": true,
+          "mlp_encoder": false,
+          "auxiliary_utilization": true,
+          "noisy_sigma0": 0.1,
+          "compact_history": true
+        },
+        "n_step": 3,
+        "prioritized_replay": true,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    }
+  ]
+}

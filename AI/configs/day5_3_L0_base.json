@@ -1,0 +1,28 @@
+{
+  "jobs": [
+    {
+      "name": "L0_base",
+      "worker": "day5_3_worker.py",
+      "stage": "Day 5.3-5.4",
+      "seed": 20530,
+      "steps": 3000,
+      "run_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\runs\\day5_3",
+      "output_root": "C:\\Users\\Patel Kavya\\Desktop\\Locker\\The LAN Lords\\Project\\AI\\outputs\\day5_3",
+      "check_determinism": false,
+      "overrides": {
+        "flags": {
+          "dueling": false,
+          "noisy_net": false,
+          "gru_history": false,
+          "mlp_encoder": false,
+          "auxiliary_utilization": false,
+          "noisy_sigma0": 0.1
+        },
+        "n_step": 1,
+        "prioritized_replay": false,
+        "load_bc": true,
+        "auxiliary_bc_weight": 0.1
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "stage": "Day 5.2 behavior-cloning pretraining",
+  "seed": 20502,
+  "expert_policy": "dijkstra_load_aware_k",
+  "excluded_expert_policy": "greedy_min_util",
+  "block_split": {
+    "unit": "(train graph, seed)",
+    "holdout_fraction": 0.125,
+    "seed": 20525
+  },
+  "architecture": {
+    "encoder": "GATv2",
+    "layers": 2,
+    "heads": 4,
+    "channels_per_head": 16,
+    "edge_features": 5,
+    "optional_third_layer": false,
+    "path_pooling": "learned_attention",
+    "actions": 4,
+    "custom_collate": true
+  },
+  "optimizer": "Adam",
+  "learning_rate": 0.0005,
+  "batch_size": 64,
+  "gradient_clip_norm": 10.0,
+  "loss": {
+    "cross_entropy_weight": 1.0,
+    "dqfd_large_margin_weight": 1.0,
+    "margin": 0.8
+  },
+  "epochs": 8,
+  "early_stopping_patience": 2,
+  "checkpoint_interval_updates": 250,
+  "auxiliary_bc_loss_during_rl": {
+    "enabled": false,
+    "weight": 0.1,
+    "expert_minibatch": "fixed"
+  }
+}

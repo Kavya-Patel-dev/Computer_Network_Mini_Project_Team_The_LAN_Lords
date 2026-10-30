@@ -1,0 +1,40 @@
+# ============================================
+# AI Routing Model - requirements.txt (MODEL ONLY)
+# No version pins -> pip installs the LATEST of everything
+# Install torch FIRST, then the rest:
+#   pip install torch
+#   pip install -r requirements.txt
+# ============================================
+
+# ---------- Core: Deep Learning + RL ----------
+torch
+torchrl
+torch_geometric
+gymnasium
+numpy
+scipy
+
+# ---------- Graphs + Data ----------
+networkx
+pandas
+lxml
+pyyaml
+
+# ---------- ML baselines ----------
+scikit-learn
+
+# ---------- Plots + Tracking ----------
+matplotlib
+seaborn
+tensorboard
+tqdm
+
+# ---------- Testing ----------
+pytest
+
+# ---------- Optional RL helpers (uncomment if needed) ----------
+# stable-baselines3
+# torchrl
+
+# ---------- NOT installed via pip ----------
+# Mininet + Ryu -> install in an Ubuntu VM, not here.

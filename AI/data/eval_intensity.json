@@ -1,0 +1,553 @@
+{
+  "Nextgen": {
+    "split": "test",
+    "generators": {
+      "poisson": {
+        "intensity": 0.1,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      },
+      "gravity": {
+        "intensity": 0.15,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      },
+      "hotspot": {
+        "intensity": 0.1,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      }
+    },
+    "path_diversity": 0.5294117647058824
+  },
+  "nobel-eu": {
+    "split": "test",
+    "generators": {
+      "poisson": {
+        "intensity": 0.1,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      },
+      "gravity": {
+        "intensity": 0.15,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      },
+      "hotspot": {
+        "intensity": 0.1,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      },
+      "sndlib": {
+        "intensity": 0.075,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      }
+    },
+    "path_diversity": 1.0
+  },
+  "nobel-germany": {
+    "split": "test",
+    "generators": {
+      "poisson": {
+        "intensity": 0.1,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      },
+      "gravity": {
+        "intensity": 0.15,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      },
+      "hotspot": {
+        "intensity": 0.1,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      },
+      "sndlib": {
+        "intensity": 0.075,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      }
+    },
+    "path_diversity": 1.0
+  },
+  "DeutscheTelekom": {
+    "split": "test",
+    "generators": {
+      "poisson": {
+        "intensity": 0.1,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      },
+      "gravity": {
+        "intensity": 0.15,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      },
+      "hotspot": {
+        "intensity": 0.1,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      }
+    },
+    "path_diversity": 0.5885057471264368
+  },
+  "Uninet": {
+    "split": "test",
+    "generators": {
+      "poisson": {
+        "intensity": 0.1,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      },
+      "gravity": {
+        "intensity": 0.15,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      },
+      "hotspot": {
+        "intensity": 0.1,
+        "status": "validation_transfer",
+        "source": "median selected validation intensity"
+      }
+    },
+    "path_diversity": 0.8461538461538461
+  },
+  "BsonetEurope": {
+    "split": "train",
+    "generators": {
+      "poisson": {
+        "intensity": 0.2,
+        "fraction_over_0_9": 0.36666666666666664,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "gravity": {
+        "intensity": 0.2,
+        "fraction_over_0_9": 0.5158333333333334,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "hotspot": {
+        "intensity": 0.15,
+        "fraction_over_0_9": 0.36833333333333335,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      }
+    },
+    "path_diversity": 0.35947712418300654
+  },
+  "HiberniaNireland": {
+    "split": "train",
+    "generators": {
+      "poisson": {
+        "intensity": 0.25,
+        "fraction_over_0_9": 0.4216666666666667,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      },
+      "gravity": {
+        "intensity": 0.2,
+        "fraction_over_0_9": 0.32416666666666666,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "hotspot": {
+        "intensity": 0.375,
+        "fraction_over_0_9": 0.42333333333333334,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      }
+    },
+    "path_diversity": 0.8888888888888888
+  },
+  "Nsfnet": {
+    "split": "train",
+    "generators": {
+      "poisson": {
+        "intensity": 0.2,
+        "fraction_over_0_9": 0.3383333333333333,
+        "status": "selected_within_band",
+        "source": "outputs/calibration_v2.csv"
+      },
+      "gravity": {
+        "intensity": 0.2,
+        "fraction_over_0_9": 0.4083333333333333,
+        "status": "selected_within_band",
+        "source": "outputs/calibration_v2.csv"
+      },
+      "hotspot": {
+        "intensity": 0.25,
+        "fraction_over_0_9": 0.5075,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      }
+    },
+    "path_diversity": 0.5769230769230769
+  },
+  "Peer1": {
+    "split": "train",
+    "generators": {
+      "poisson": {
+        "intensity": 0.2,
+        "fraction_over_0_9": 0.35333333333333333,
+        "status": "selected_within_band",
+        "source": "outputs/calibration_v2.csv"
+      },
+      "gravity": {
+        "intensity": 0.2,
+        "fraction_over_0_9": 0.5716666666666667,
+        "status": "selected_within_band",
+        "source": "outputs/calibration_v2.csv"
+      },
+      "hotspot": {
+        "intensity": 0.2,
+        "fraction_over_0_9": 0.5633333333333334,
+        "status": "selected_within_band",
+        "source": "outputs/calibration_v2.csv"
+      }
+    },
+    "path_diversity": 0.55
+  },
+  "abilene": {
+    "split": "train",
+    "generators": {
+      "poisson": {
+        "intensity": 0.075,
+        "fraction_over_0_9": 0.4508333333333333,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      },
+      "gravity": {
+        "intensity": 0.1,
+        "fraction_over_0_9": 0.5333333333333333,
+        "status": "selected_within_band",
+        "source": "outputs/calibration_v2.csv"
+      },
+      "hotspot": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.35083333333333333,
+        "status": "selected_within_band",
+        "source": "outputs/calibration_v2.csv"
+      },
+      "sndlib": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.4483333333333333,
+        "status": "selected_within_band",
+        "source": "outputs/calibration_v2.csv"
+      }
+    },
+    "path_diversity": 0.8333333333333334
+  },
+  "atlanta": {
+    "split": "train",
+    "generators": {
+      "poisson": {
+        "intensity": 0.025,
+        "fraction_over_0_9": 0.495,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      },
+      "gravity": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.5175,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "hotspot": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.475,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "sndlib": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.49916666666666665,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      }
+    },
+    "path_diversity": 1.0
+  },
+  "geant": {
+    "split": "train",
+    "generators": {
+      "poisson": {
+        "intensity": 0.025,
+        "fraction_over_0_9": 0.4825,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      },
+      "gravity": {
+        "intensity": 0.025,
+        "status": "cannot_congest",
+        "source": "non-test sweep did not reach 0.30-0.60"
+      },
+      "hotspot": {
+        "intensity": 0.025,
+        "fraction_over_0_9": 0.4425,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      },
+      "sndlib": {
+        "intensity": 0.025,
+        "fraction_over_0_9": 0.36666666666666664,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      }
+    },
+    "path_diversity": 1.0
+  },
+  "newyork": {
+    "split": "train",
+    "generators": {
+      "poisson": {
+        "intensity": 0.025,
+        "fraction_over_0_9": 0.41083333333333333,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      },
+      "gravity": {
+        "intensity": 0.025,
+        "status": "cannot_congest",
+        "source": "non-test sweep did not reach 0.30-0.60"
+      },
+      "hotspot": {
+        "intensity": 0.025,
+        "fraction_over_0_9": 0.5416666666666666,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      },
+      "sndlib": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.43333333333333335,
+        "status": "selected_within_band",
+        "source": "outputs/calibration_v2.csv"
+      }
+    },
+    "path_diversity": 1.0
+  },
+  "Internet2": {
+    "split": "train",
+    "generators": {
+      "poisson": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.5283333333333333,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "gravity": {
+        "intensity": 0.075,
+        "fraction_over_0_9": 0.5,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      },
+      "hotspot": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.5416666666666666,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      }
+    },
+    "path_diversity": 1.0
+  },
+  "Oxford": {
+    "split": "train",
+    "generators": {
+      "poisson": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.4091666666666667,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "gravity": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.4191666666666667,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "hotspot": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.475,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      }
+    },
+    "path_diversity": 1.0
+  },
+  "Renater2004": {
+    "split": "train",
+    "generators": {
+      "poisson": {
+        "intensity": 0.1,
+        "fraction_over_0_9": 0.435,
+        "status": "selected_within_band",
+        "source": "outputs/calibration_v2.csv"
+      },
+      "gravity": {
+        "intensity": 0.15,
+        "fraction_over_0_9": 0.52,
+        "status": "selected_within_band",
+        "source": "outputs/calibration_v2.csv"
+      },
+      "hotspot": {
+        "intensity": 0.2,
+        "fraction_over_0_9": 0.5291666666666667,
+        "status": "selected_within_band",
+        "source": "outputs/calibration_v2.csv"
+      }
+    },
+    "path_diversity": 0.3931034482758621
+  },
+  "Rhnet": {
+    "split": "train",
+    "generators": {
+      "poisson": {
+        "intensity": 0.1,
+        "fraction_over_0_9": 0.3225,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "gravity": {
+        "intensity": 0.15,
+        "fraction_over_0_9": 0.5358333333333334,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "hotspot": {
+        "intensity": 0.1,
+        "fraction_over_0_9": 0.3458333333333333,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      }
+    },
+    "path_diversity": 0.325
+  },
+  "Arpanet19728": {
+    "split": "val",
+    "generators": {
+      "poisson": {
+        "intensity": 0.3,
+        "fraction_over_0_9": 0.43333333333333335,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "gravity": {
+        "intensity": 0.25,
+        "fraction_over_0_9": 0.4708333333333333,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      },
+      "hotspot": {
+        "intensity": 0.3,
+        "fraction_over_0_9": 0.5516666666666666,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      }
+    },
+    "path_diversity": 1.0
+  },
+  "EliBackbone": {
+    "split": "val",
+    "generators": {
+      "poisson": {
+        "intensity": 0.25,
+        "fraction_over_0_9": 0.5083333333333333,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      },
+      "gravity": {
+        "intensity": 0.2,
+        "fraction_over_0_9": 0.3275,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "hotspot": {
+        "intensity": 0.3,
+        "fraction_over_0_9": 0.36583333333333334,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      }
+    },
+    "path_diversity": 1.0
+  },
+  "nobel-us": {
+    "split": "val",
+    "generators": {
+      "poisson": {
+        "intensity": 0.075,
+        "fraction_over_0_9": 0.42,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      },
+      "gravity": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.30916666666666665,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "hotspot": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.4675,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "sndlib": {
+        "intensity": 0.075,
+        "fraction_over_0_9": 0.42583333333333334,
+        "status": "selected_within_band",
+        "source": "supplemental_fine"
+      }
+    },
+    "path_diversity": 1.0
+  },
+  "Compuserve": {
+    "split": "val",
+    "generators": {
+      "poisson": {
+        "intensity": 0.1,
+        "fraction_over_0_9": 0.48333333333333334,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "gravity": {
+        "intensity": 0.1,
+        "fraction_over_0_9": 0.5408333333333334,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "hotspot": {
+        "intensity": 0.1,
+        "fraction_over_0_9": 0.48833333333333334,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      }
+    },
+    "path_diversity": 0.6043956043956044
+  },
+  "Eunetworks": {
+    "split": "val",
+    "generators": {
+      "poisson": {
+        "intensity": 0.1,
+        "fraction_over_0_9": 0.4558333333333333,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "gravity": {
+        "intensity": 0.15,
+        "fraction_over_0_9": 0.45416666666666666,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      },
+      "hotspot": {
+        "intensity": 0.05,
+        "fraction_over_0_9": 0.515,
+        "status": "selected_within_band",
+        "source": "supplemental_coarse"
+      }
+    },
+    "path_diversity": 0.8571428571428571
+  }
+}

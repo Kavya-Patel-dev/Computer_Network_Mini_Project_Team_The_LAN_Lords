@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #FFFFFF;
+  --color-surface: #F8FAFC;
+  --color-border: #E2E8F0;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748B;
+  --color-primary: #2563EB;
+  --color-primary-text: #FFFFFF;
+  --color-success: #15803D;
+  --color-warning: #B45309;
+  --color-danger: #B91C1C;
+  --color-info: #0E7490;
+}
+
+.dark {
+  --color-bg: #0B1220;
+  --color-surface: #111A2E;
+  --color-border: #26324A;
+  --color-text-primary: #F1F5F9;
+  --color-text-secondary: #CBD5E1;
+  --color-text-muted: #94A3B8;
+  --color-primary: #60A5FA;
+  --color-primary-text: #0B1220;
+  --color-success: #4ADE80;
+  --color-warning: #FBBF24;
+  --color-danger: #F87171;
+  --color-info: #22D3EE;
+}
+
+/* Typography styles matching Section 2 tokens */
+.text-display {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 640px) {
+  .text-display {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+.text-h1 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .text-h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.text-h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.text-h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.text-body-l {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.text-body {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  .text-body {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.text-label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+.text-btn {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .text-btn {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.text-caption {
+  font-size: 0.75rem; /* Min 12px rule strictly observed */
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+.text-overline {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.text-kpi {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .text-kpi {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+.text-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+
+/* Gujarati & Devanagari extra line height adjustment */
+.lang-gu, .lang-hi {
+  line-height: calc(1em + 8px) !important;
+}
+
+/* Tabular figures for data tables and metrics */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Canvas node label halo */
+.node-label-halo {
+  text-shadow:
+    -2px -2px 0 var(--color-surface),
+     2px -2px 0 var(--color-surface),
+    -2px  2px 0 var(--color-surface),
+     2px  2px 0 var(--color-surface);
+}
+
+/* Touch targets >= 44x44px */
+.touch-target {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Focus styling */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}

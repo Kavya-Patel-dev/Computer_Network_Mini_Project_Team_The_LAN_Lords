@@ -1,0 +1,250 @@
+{
+  "test": [
+    {
+      "cyclomatic": 3,
+      "family": "nextgen",
+      "fingerprint": "97e39c92894926045cf58cc957a01d70ffdd1d7409e3ec22485458cf89d739b0",
+      "name": "Nextgen",
+      "num_edges": 19,
+      "num_nodes": 17,
+      "path": "Repetita-master/data/2016TopologyZooUCL_inverseCapacity/Nextgen.graph",
+      "path_diversity": 0.5294117647058824,
+      "source": "repetita"
+    },
+    {
+      "cyclomatic": 14,
+      "family": "nobeleu",
+      "fingerprint": "a68636b7b0292e47373091269d2b09c138f00052c5dbfc71a299c84ec0d62413",
+      "name": "nobel-eu",
+      "num_edges": 41,
+      "num_nodes": 28,
+      "path": "sndlib-networks-xml/nobel-eu.xml",
+      "path_diversity": 1.0,
+      "source": "sndlib"
+    },
+    {
+      "cyclomatic": 10,
+      "family": "nobelgermany",
+      "fingerprint": "c65e3eec8bf5329503c56974c5816d05fb657a983f5bd419df5e4da700862bd5",
+      "name": "nobel-germany",
+      "num_edges": 26,
+      "num_nodes": 17,
+      "path": "sndlib-networks-xml/nobel-germany.xml",
+      "path_diversity": 1.0,
+      "source": "sndlib"
+    },
+    {
+      "cyclomatic": 26,
+      "family": "deutschetelekom",
+      "fingerprint": "5b06e8561032a5bcb088ca350e24c08d0558a1c6ac4ff2f7029767a455e00274",
+      "name": "DeutscheTelekom",
+      "num_edges": 55,
+      "num_nodes": 30,
+      "path": "30153949/graphml/graphml/DeutscheTelekom.graphml",
+      "path_diversity": 0.5885057471264368,
+      "source": "zoo"
+    },
+    {
+      "cyclomatic": 6,
+      "family": "uninet",
+      "fingerprint": "f5bbf500b00b9b1f641c66d4a802ae862d0c70ab2989f9f3f2c42b6db3ab3dcf",
+      "name": "Uninet",
+      "num_edges": 18,
+      "num_nodes": 13,
+      "path": "30153949/graphml/graphml/Uninet.graphml",
+      "path_diversity": 0.8461538461538461,
+      "source": "zoo"
+    }
+  ],
+  "train": [
+    {
+      "cyclomatic": 6,
+      "family": "bsoneteurope",
+      "fingerprint": "29e84ca1cde8939e0aa63ff8071c56e333c443d4fc588782bc090244320ad256",
+      "name": "BsonetEurope",
+      "num_edges": 23,
+      "num_nodes": 18,
+      "path": "Repetita-master/data/2016TopologyZooUCL_inverseCapacity/BsonetEurope.graph",
+      "path_diversity": 0.35947712418300654,
+      "source": "repetita"
+    },
+    {
+      "cyclomatic": 4,
+      "family": "hibernianireland",
+      "fingerprint": "1aa8690c01c885d6d617f2df607b282a8c13e685691226533b63a28d1f557954",
+      "name": "HiberniaNireland",
+      "num_edges": 21,
+      "num_nodes": 18,
+      "path": "Repetita-master/data/2016TopologyZooUCL_inverseCapacity/HiberniaNireland.graph",
+      "path_diversity": 0.8888888888888888,
+      "source": "repetita"
+    },
+    {
+      "cyclomatic": 3,
+      "family": "nsfnet",
+      "fingerprint": "0efe233283e84390e9633fb23e64493acb16646c75466c99c38bf09837c91de6",
+      "name": "Nsfnet",
+      "num_edges": 15,
+      "num_nodes": 13,
+      "path": "Repetita-master/data/2016TopologyZooUCL_inverseCapacity/Nsfnet.graph",
+      "path_diversity": 0.5769230769230769,
+      "source": "repetita"
+    },
+    {
+      "cyclomatic": 5,
+      "family": "peer",
+      "fingerprint": "52f5718c639cd2e8d44111f7c6c864a1d9ecc26c93c6b6b6691676e7dd6e829f",
+      "name": "Peer1",
+      "num_edges": 20,
+      "num_nodes": 16,
+      "path": "Repetita-master/data/2016TopologyZooUCL_inverseCapacity/Peer1.graph",
+      "path_diversity": 0.55,
+      "source": "repetita"
+    },
+    {
+      "cyclomatic": 4,
+      "family": "abilene",
+      "fingerprint": "5952c4e4baa467bfceec33094d34d9d204d61463f93e47ced79392da690ce722",
+      "name": "abilene",
+      "num_edges": 15,
+      "num_nodes": 12,
+      "path": "sndlib-networks-xml/abilene.xml",
+      "path_diversity": 0.8333333333333334,
+      "source": "sndlib"
+    },
+    {
+      "cyclomatic": 8,
+      "family": "atlanta",
+      "fingerprint": "a59b0639b151ecaabce9437c21ec8120be8499d9e5160b735c707891a59647e4",
+      "name": "atlanta",
+      "num_edges": 22,
+      "num_nodes": 15,
+      "path": "sndlib-networks-xml/atlanta.xml",
+      "path_diversity": 1.0,
+      "source": "sndlib"
+    },
+    {
+      "cyclomatic": 15,
+      "family": "geant",
+      "fingerprint": "b9a4e240dcffd95fcbac120f84c19cd77cf6d23652d88062ead79352f6379adc",
+      "name": "geant",
+      "num_edges": 36,
+      "num_nodes": 22,
+      "path": "sndlib-networks-xml/geant.xml",
+      "path_diversity": 1.0,
+      "source": "sndlib"
+    },
+    {
+      "cyclomatic": 34,
+      "family": "newyork",
+      "fingerprint": "16937e17385dbeccb77c578c8a1c953879549590c42a623e6eaeaedd83dbb871",
+      "name": "newyork",
+      "num_edges": 49,
+      "num_nodes": 16,
+      "path": "sndlib-networks-xml/newyork.xml",
+      "path_diversity": 1.0,
+      "source": "sndlib"
+    },
+    {
+      "cyclomatic": 7,
+      "family": "internet",
+      "fingerprint": "4bb8d25ce82ac28cb29dd667ae65e0ca75f0069da294b9fc656ee3990858eafd",
+      "name": "Internet2",
+      "num_edges": 26,
+      "num_nodes": 20,
+      "path": "30153949/graphml/graphml/Internet2.graphml",
+      "path_diversity": 1.0,
+      "source": "zoo"
+    },
+    {
+      "cyclomatic": 7,
+      "family": "oxford",
+      "fingerprint": "c84ee33754a386a71c4398d31d0976e7745408f0ec13cd2e0e6e7f771c71497a",
+      "name": "Oxford",
+      "num_edges": 26,
+      "num_nodes": 20,
+      "path": "30153949/graphml/graphml/Oxford.graphml",
+      "path_diversity": 1.0,
+      "source": "zoo"
+    },
+    {
+      "cyclomatic": 7,
+      "family": "renater",
+      "fingerprint": "2dc0a6f7883d46ee5f8df67c337adbb7fba730ad0fc72f778272763345ebbce9",
+      "name": "Renater2004",
+      "num_edges": 36,
+      "num_nodes": 30,
+      "path": "30153949/graphml/graphml/Renater2004.graphml",
+      "path_diversity": 0.3931034482758621,
+      "source": "zoo"
+    },
+    {
+      "cyclomatic": 3,
+      "family": "rhnet",
+      "fingerprint": "59bc25e0827c325ebdc5a234b4d3aa3d2a44c0ce0ca0181b5ee7cc6368fae2e7",
+      "name": "Rhnet",
+      "num_edges": 18,
+      "num_nodes": 16,
+      "path": "30153949/graphml/graphml/Rhnet.graphml",
+      "path_diversity": 0.325,
+      "source": "zoo"
+    }
+  ],
+  "val": [
+    {
+      "cyclomatic": 4,
+      "family": "arpanet",
+      "fingerprint": "1bc4bc0c8fe4c2290843af3b4dccdbdf126fbc004d64b34a5bed99955695ea06",
+      "name": "Arpanet19728",
+      "num_edges": 32,
+      "num_nodes": 29,
+      "path": "Repetita-master/data/2016TopologyZooUCL_inverseCapacity/Arpanet19728.graph",
+      "path_diversity": 1.0,
+      "source": "repetita"
+    },
+    {
+      "cyclomatic": 11,
+      "family": "elibackbone",
+      "fingerprint": "4ebf749bcae24ff770e7ec9e6824ce97e892a031d525f82cae05f90437cb9f6b",
+      "name": "EliBackbone",
+      "num_edges": 30,
+      "num_nodes": 20,
+      "path": "Repetita-master/data/2016TopologyZooUCL_inverseCapacity/EliBackbone.graph",
+      "path_diversity": 1.0,
+      "source": "repetita"
+    },
+    {
+      "cyclomatic": 8,
+      "family": "nobelus",
+      "fingerprint": "56fd29439aff83e0538b49d24baf428750b2426d51faa2e9a7854131ada90015",
+      "name": "nobel-us",
+      "num_edges": 21,
+      "num_nodes": 14,
+      "path": "sndlib-networks-xml/nobel-us.xml",
+      "path_diversity": 1.0,
+      "source": "sndlib"
+    },
+    {
+      "cyclomatic": 4,
+      "family": "compuserve",
+      "fingerprint": "c2feb5d10beca443538c2b5c1d206328ed1b3a094a746ff480a3b55d63a05e5d",
+      "name": "Compuserve",
+      "num_edges": 17,
+      "num_nodes": 14,
+      "path": "30153949/graphml/graphml/Compuserve.graphml",
+      "path_diversity": 0.6043956043956044,
+      "source": "zoo"
+    },
+    {
+      "cyclomatic": 3,
+      "family": "eunetworks",
+      "fingerprint": "6e99f64fd4a11121b932cadedeb7b6fe5154d1c977e62f3ecdb552c7e1334012",
+      "name": "Eunetworks",
+      "num_edges": 16,
+      "num_nodes": 14,
+      "path": "30153949/graphml/graphml/Eunetworks.graphml",
+      "path_diversity": 0.8571428571428571,
+      "source": "zoo"
+    }
+  ]
+}
